@@ -68,4 +68,4 @@ def serve_processed_image(filename):
         return jsonify({"error": f"下載失敗：{str(e)}"}), 500
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    app.run(host="0.0.0.0", port=5000)
