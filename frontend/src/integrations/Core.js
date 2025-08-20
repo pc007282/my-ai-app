@@ -10,7 +10,7 @@ export async function UploadFile({ file }) {
 }
 
 export async function RemoveImageBackground({ image_url }) {
-  const response = await fetch('https://image-background-remover.onrender.com/api/remove-background', {
+  const response = await fetch('https://my-ai-app-935f.onrender.com/api/remove-background', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ image_url }),
