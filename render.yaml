@@ -1,12 +1,9 @@
-services:
-  - type: web
-    name: image-background-remover
-    env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn -w 4 -b 0.0.0.0:$PORT api:app
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.9
-      - key: PORT
-        value: 5000
+predeploy:
+  - pip install -r requirements.txt
+deploy:
+  start: gunicorn -w 4 -k uvicorn.workers.UvicornWorker api:app
+env:
+  - key: PYTHON_VERSION
+    value: "3.11.9"
+  - key: FLASK_ENV
+    value: "production"
