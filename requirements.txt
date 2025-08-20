@@ -1,7 +1,4 @@
 flask==2.3.3
+rembg==2.0.67
 gunicorn==22.0.0
-rembg[cpu]==2.0.67
-pillow==10.4.0
-requests==2.32.3
-flask-cors==4.0.1
 uvicorn==0.35.0
