@@ -1,7 +1,7 @@
 export async function UploadFile({ file }) {
   const formData = new FormData();
   formData.append('file', file);
-  const response = await fetch('https://image-background-remover.onrender.com/api/upload', {
+  const response = await fetch('https://my-ai-app-935f.onrender.com/api/upload', {
     method: 'POST',
     body: formData,
   });
