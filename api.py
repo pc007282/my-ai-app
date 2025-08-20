@@ -67,5 +67,6 @@ def serve_processed_image(filename):
     except Exception as e:
         return jsonify({"error": f"下載失敗：{str(e)}"}), 500
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+# 移除 app.run，因為 gunicorn 會接管
+# if __name__ == "__main__":
+#     app.run(host="0.0.0.0", port=5000)
