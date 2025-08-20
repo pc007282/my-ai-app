@@ -1,4 +1,4 @@
 flask==2.3.3
 rembg==2.0.67
 gunicorn==22.0.0
-uvicorn==0.35.0
+uvicorn==0.30.0
