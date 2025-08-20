@@ -4,3 +4,4 @@ rembg[cpu]==2.0.67
 pillow==10.4.0
 requests==2.32.3
 flask-cors==4.0.1
+uvicorn==0.35.0
