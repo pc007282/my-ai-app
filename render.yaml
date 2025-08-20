@@ -1,7 +1,7 @@
 predeploy:
   - pip install -r requirements.txt
 deploy:
-  start: gunicorn -w 2 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:5000 api:app
+  start: gunicorn -w 1 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:5000 api:app
 env:
   - key: PYTHON_VERSION
     value: "3.11.9"
