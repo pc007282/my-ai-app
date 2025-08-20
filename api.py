@@ -67,5 +67,5 @@ def serve_processed_image(filename):
     except Exception as e:
         return jsonify({"error": f"下載失敗：{str(e)}"}), 500
 
-if __my-ai-app__ == '__main__':
-    app.run(host="0.0.0.0", port=5000)
+if __name__ == '__main__':
+    my-ai-app.run(host="0.0.0.0", port=5000)
